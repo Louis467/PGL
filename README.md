@@ -77,3 +77,10 @@ These characters can be escaped with \\
     </tr>
   </tbody>
 </table>
+
+#EXAMPLE
+example 1.1
+add two numbers (5s in this case) to stack and check if they're the same. if they are, run block 0, which prints y, otherwise print n. (FIX ME (BUGGY))
+```
+{y.}55=\0n.
+```
