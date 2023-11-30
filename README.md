@@ -15,6 +15,8 @@ ANY character will be added to the stack except these ones:
 \<
 \>
 \!
+\{
+\}
 
 These characters can be escaped with \\
 
@@ -25,56 +27,53 @@ These characters can be escaped with \\
     <tr>
       <th>Character</th>
       <th>Name</th>
+      <th>Functionality</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>\</td>
+      <td>\n</td>
       <td>backslash</td>
+      <td>Runs the !n+1)th block defined</td>
     </tr>
     <tr>
       <td>*</td>
       <td>asterisk</td>
-    </tr>
-    <tr>
-      <td>_</td>
-      <td>underscore</td>
+      <td>Replaces top two elements in stack with their product</td>
     </tr>
     <tr>
       <td>{ }</td>
       <td>curly braces</td>
-    </tr>
-    <tr>
-      <td>[ ]</td>
-      <td>brackets</td>
+      <td>starts and ends a new block (like a function)</td>
     </tr>
     <tr>
       <td>< ></td>
       <td>angle brackets</td>
+      <td>compares the top two element in stack if true, go to next instruction. otherwise go to the one after</td>
     </tr>
-    <tr>
-      <td>( )</td>
-      <td>parentheses</td>
-    </tr>
-    <tr>
-      <td>#</td>
-      <td>pound sign</td>
-    </tr>
-    <tr>
       <td>+</td>
       <td>plus sign</td>
+      <td>Replaces top two elements in stack with their sum</td>
     </tr>
     <tr>
       <td>-</td>
       <td>minus sign (hyphen)</td>
+      <td>Replaces top two elements in stack with top-(top-1)</td>
     </tr>
     <tr>
       <td>.</td>
       <td>dot</td>
+      <td>Prints the element on the top of the stack</td>
     </tr>
     <tr>
-      <td>!</td>
+      <td>!n</td>
       <td>exclamation mark</td>
+      <td>removes stack[n] (stack[0] is the bottom)</td>
+    </tr>
+    <tr>
+      <td>=</td>
+      <td>equals</td>
+      <td>compares the top two element in stack if true, go to next instruction. otherwise go to the one after</td>
     </tr>
   </tbody>
 </table>
